@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.event.name }} - {{ page.event.date }} | Bérénice Batut</title>
+        <link rel="stylesheet" href="{{ "/assets/reveal.js/reset.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/assets/reveal.js/reveal.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="{{ "/assets/reveal.js/theme/simple.css" | prepend: site.baseurl }}" id="theme">
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="{{ "/assets/reveal.js/plugin/highlight/zenburn.css" | prepend: site.baseurl }}">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="stylesheet" href="{{ "/assets/css/slides.css" | prepend: site.baseurl }}">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown="slides.md"
+                    data-separator="^---\n"
+                    data-separator-vertical="^----\n"
+                    data-separator-notes="^Note:"
+                >
+                </section>
+            </div>
+        </div>
+        <script type="text/javascript" src="{{ "/assets/reveal.js/reveal.js" | prepend: site.baseurl }}"></script>
+        <script src="{{ "/assets/reveal.js/plugin/notes/notes.js" | prepend: site.baseurl }}"></script>
+		<script src="{{ "/assets/reveal.js/plugin/markdown/markdown.js" | prepend: site.baseurl }}"></script>
+        <script src="{{ "/assets/reveal.js/plugin/highlight/highlight.js" | prepend: site.baseurl }}"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+    </body>
+</html>

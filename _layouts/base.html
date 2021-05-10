@@ -1,0 +1,55 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ page.title | default: site.title }}</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    </head>
+    <body>
+        {% include default-header.html %}
+
+        <section class="section">
+            <div class="container content {{ layout.css }} {{ page.css }}">
+                <header class="hero-header{% unless page.image %} no-image{% endunless %}"{% if page.image %} style="background-image: url({{ page.image }});"{% endif %}>
+                    <div class="hero-header-title">
+                        <h1 class="title is-1">{{ page.title }}</h1>
+                    
+                        {% if page.description %}
+                        <p class="subtitle is-3">{{ page.description }}</p>
+                        {% endif %}
+                    </div>
+                </header>
+                {{ content }}
+            </div>
+        </section>
+        
+        {% include default-footer.html %}
+    </body>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type='text/javascript'>
+        jQuery(document).ready(function() {
+            jQuery('.toggle').each(function () {
+                var $toggleSummary = $(this);
+                var $toggler       = $toggleSummary.find('.toggler').first();
+                var $toggled       = $toggleSummary.find('.toggled').first();
+        
+                $toggled.hide();
+        
+                $toggler.on('click', function (e) {
+                    e.preventDefault();
+        
+                    $toggled.toggle(400);
+                });
+            });
+        });
+    </script>
+</html>

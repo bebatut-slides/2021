@@ -1,0 +1,89 @@
+---
+---
+
+@charset "utf-8";
+@import 'bulma/bulma.sass';
+
+.navbar {
+  -webkit-box-shadow: 0 0 12px 0 #323232;
+  -moz-box-shadow: 0 0 12px 0 #323232k;
+  box-shadow: 0 0 12px 0 #323232;
+
+  a {
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .navbar-item {
+    img {
+      max-height: 3rem;
+    }
+  }
+
+  .navbar-brand {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-right: 20px;
+  }
+
+}
+
+.hero-header {
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-origin: padding-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  width: 100%;
+
+  &.no-image {
+    height: auto;
+  }
+
+  @include tablet() {
+    background-attachment: fixed;
+    height: 70vh;
+
+    &.no-image {
+      min-height: 40vh;
+    }
+  }
+}
+
+.hero-header-title {
+  padding-top: 160px;
+  text-align: center;
+  text-shadow: 2px 2px 5px $dark;
+
+  h1,
+  p {
+    color: #ffffff;
+  }
+
+  .no-image & {
+    padding-top: 80px;
+    text-shadow: none;
+
+    h1,
+    p {
+      color: $text;
+    }
+  }
+
+  @include tablet() {
+    padding-top: 20vh;
+  }
+}
+
+.footer {
+  & {
+    font-size: small;
+  }
+
+  -webkit-box-shadow: 0 0 1px 0 #323232;
+  -moz-box-shadow: 0 0 1px 0 #323232k;
+  box-shadow: 0 0 1px 0 #323232;
+  padding: 1rem 1rem 1rem;
+  background-color: #fafafa;
+}

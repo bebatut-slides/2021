@@ -1,0 +1,58 @@
+---
+layout: base
+---
+{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+
+
+<div class="col-md-12">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Title</th>
+          <th class="is-hidden-mobile">Duration</th>
+          <th class="is-hidden-mobile">Event</th>
+          <th class="is-hidden-mobile">Location</th>
+          <th class="is-hidden-mobile">Source</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for page in site.pages %}
+            {% if page.event %}
+        <tr>
+            <td>
+                <span class="text-nowrap">{{ page.event.date | date: date_format }}</span>
+            </td>
+            <td>
+                <span class="text-nowrap">
+                    <h5><a href="{{ site.baseurl}}/{{ page.url }}">{{ page.talk.title | escape }}</a></h5>
+                    {% if page.talk.summary %}
+                        <div>{{ event.excerpt }}</div>
+                    {% endif %}
+                </span>
+            </td>
+            <td class="is-hidden-mobile">
+                <span class="text-nowrap">{{ page.talk.duration }}</span>
+            </td>
+            <td class="is-hidden-mobile">
+                <span class="text-nowrap">
+                    {% if page.event.link %}
+                        <a href="{{ page.event.link }}">{{ page.event.name | escape }}</a>
+                    {% else %}
+                        {{ page.event.name | escape }}
+                    {% endif %}
+                </span>
+            </td>
+            <td class="is-hidden-mobile">
+                {% if page.event.location.city %} {{ page.event.location.city }}, {% endif %}
+                {{ page.event.location.country }}
+            </td>
+            <td class="is-hidden-mobile">
+                <a href="{{ site.github.repository_url }}/tree/master{{ page.dir }}"><i class="fab fa-github"></i></a>
+            </td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+</div>
