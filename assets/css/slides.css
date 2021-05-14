@@ -91,7 +91,14 @@ img{
 .slides .footer{
   position: absolute;
   left: -10%;
-  font-size: 0.2em;
+  font-size: 0.5em;
   bottom: -90%;
   list-style-type: none;
+}
+
+.slides .header_icon{
+  position: absolute;
+  right: -10%;
+  top: 0%;
+  width: 10%;
 }
