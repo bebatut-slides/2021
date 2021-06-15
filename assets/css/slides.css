@@ -102,3 +102,15 @@ img{
   top: 0%;
   width: 10%;
 }
+
+.left_column {
+  margin-right: 2em;
+  float: left;
+  width: 45%;
+}
+
+.right_column {
+  text-align: left;
+  float: right;
+  width: 45%;
+}
