@@ -255,6 +255,7 @@ What I tried
 
 Note:
 - Test different workflow managers
+    - Ask if they know any WF manager
     - None filling good criteria (no snakemake, nextflow back then)
 - Tried to implement something based on makefile and Docker
     - Homemade approach:
@@ -264,15 +265,15 @@ Note:
     - Too cumbersome, no need to reinvent the wheel
     - Not user friendly
 
-----
-### Galaxy?
-
-<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/embed/5f4c19f100d9357ad8b600a98a31ceed' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
 
 ----
 ### Galaxy?
 
-<div style='position: relative; padding-bottom: 56.25%; padding-top: 35px; height: 0; overflow: hidden;'><iframe sandbox='allow-scripts allow-same-origin' allowfullscreen='true' allowtransparency='true' frameborder='0' height='315' src='https://www.mentimeter.com/embed/ba37c52c36b3354ea8c5eb6a158e0e1a' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;' width='420'></iframe></div>
+Note:
+
+Ask if
+- Who know Galaxy
+- Who has already used Galaxy
 
 ----
 ### Galaxy?
@@ -380,6 +381,8 @@ Note:
 - Mention that was my first GitHub repos
 - Help Gaalxy admin
 - Not straightforward for users
+
+Ask if anyone has contributed to Open Source
 
 ----
 ### Beyond ASaiM
