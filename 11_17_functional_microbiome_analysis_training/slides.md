@@ -1,5 +1,5 @@
 <!-- .slide: data-background="images/title.jpg" data-state="dim-background" -->
-## Galaxy for Microbiome
+## How to analyze microbiome data with Galaxy?
 
 <br>
 
@@ -21,7 +21,7 @@ Note:
 ---
 <!-- .slide: data-background="images/back.jpg" data-state="dim-background" -->
 
-## Back in 2015
+## Back in time
 
 <small style="position: absolute; right: 0%; font-size: 0.2em; bottom: -20%;">Photo by [Andy Beales](https://unsplash.com/@andybeales?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/time-travel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) </small>
   
