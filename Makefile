@@ -24,10 +24,15 @@ create-env: ## create conda environment
 .PHONY: create-env
 
 ACTIVATE_ENV = source $(dir ${CONDA})activate ${CONDA_ENV}
+COND_ENV_DIR=$(shell dirname $(dir $(CONDA)))
 install: clean ## install dependencies
 	$(ACTIVATE_ENV) && \
+		gem update --no-document --system && \
 		gem install bundler && \
-		bundle install
+		pushd ${COND_ENV_DIR}/envs/${CONDA_ENV}/share/rubygems/bin && \
+		ln -sf ../../../bin/ruby ruby && \
+		popd && \
+		bundle install && \
 .PHONY: install
 
 serve: ## run a local server

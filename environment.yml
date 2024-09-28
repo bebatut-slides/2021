@@ -4,14 +4,15 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - gmp=6.1.2
-  - jemalloc=5.0.1
-  - nodejs=9.11.1
-  - openssl=1.0.2o
-  - readline=7.0
-  - ruby=2.4.4
-  - yaml=0.1.7
-  - yamllint=1.11.0
-  - zlib=1.2.11
+  - gmp>=6.1.2
+  - jemalloc>=5.0.1
+  - nodejs>=9.11.1
+  - openssl>=1.0.2o
+  - readline
+  - ruby>=3.0
+  - libffi
+  - yaml>=0.1.7
+  - yamllint>=1.11.0
+  - zlib
   - libxml2
-  - pkg-config 
+  - pkg-config

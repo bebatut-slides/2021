@@ -8,20 +8,15 @@ This repository served the slides for my talks.
 ## Install the requirements
 
 1. Open a Terminal
-2. (If not done yet) Clone the training material GitHub repository: 
-
-    ```
-    $ git clone https://github.com/bebatut/2021.git
-    ```
-
-3. Navigate to the `2021/` folder with `cd`
+2. (If not done yet) Clone the GitHub repository:
+3. Navigate to the folder with `cd`
 4. Set up the conda environment:
 
     ```
     $ make create-env
     ```
 
-4. Install Jekyll, Decktape and related modules into the conda environment: 
+4. Install Jekyll, Decktape and related modules into the conda environment:
 
     ```
     $ make install
@@ -35,7 +30,7 @@ This repository served the slides for my talks.
     $ make serve
     ```
 
-2. Visualize at `http://localhost:4000/2021/`
+2. Visualize at `http://localhost:4000/2024/`
 
 ## Generate PDF of the slides
 
